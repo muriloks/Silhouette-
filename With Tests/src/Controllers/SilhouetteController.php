@@ -6,8 +6,15 @@ use App\Services\SilhouetteService;
 
 class SilhouetteController
 {
-  public static function index(SilhouetteService $silhouetteService)
+  protected $silhouetteService;
+
+  public function __construct(SilhouetteService $silhouetteService)
   {
-    $silhouetteService->init();
+    $this->silhouetteService = $silhouetteService;
+  }
+
+  public function index()
+  {
+    $this->silhouetteService->init();
   }
 }

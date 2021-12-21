@@ -17,7 +17,7 @@ class SilhouetteService
     $this->silhouetteRepository = $silhouetteRepository;
   }
 
-  public  function init(): void
+  public function init(): void
   {
     $numberOfCases = CalculationService::getNumberOfCases();
     $this->iterateCases($numberOfCases);

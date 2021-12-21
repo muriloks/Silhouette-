@@ -10,4 +10,4 @@ $silhouetteRepository = new SilhouetteRepository();
 $silhouetteService = new SilhouetteService($silhouetteRepository);
 
 // Just mocking as if we're needing a controller
-SilhouetteController::index($silhouetteService);
+(new SilhouetteController($silhouetteService))->index();
