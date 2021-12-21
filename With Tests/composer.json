@@ -1,0 +1,16 @@
+{
+    "name": "mvieiraks/silhouette",
+    "description": "A PHP test",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Murilo Vieira",
+            "email": "contatompvieira@gmail.com"
+        }
+    ],
+    "require": {}
+}
